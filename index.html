@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+
+        <input id="male" placeholder="Male name">  <br> <br>
+
+        <button onclick="handClick()">Calculate Love</button>  <br> <br> <br> <br>
+
+        <input id="female" placeholder="Female name"> <br> <br>
+
+        <nav id="meet">   </nav>
+
+
+
+    </div>
+
+
+    <script>
+
+        function handClick(){
+
+            var run = document.getElementById("male").value
+
+            var ran = document.getElementById("female").value
+
+            var like = Math.round(Math.random() * 100)
+
+            var love = document.getElementById("meet").innerHTML = " The love between " + " " + run + " and " + " " + ran + " is " + like + " % "
+
+            if (like <= 30){
+                var love = document.getElementById("meet").innerHTML = " The love between " + " " + run + " and " + " " + ran + " is " + like + " % " + " kindly breakup to avoid sickle cell."
+
+            }
+
+            else if (like <= 39){
+                var love = document.getElementById("meet").innerHTML = " The love between " + " " + run + " and " + " " + ran + " is " + like + " % " + " your relationship is shaking You need Prayer. "
+ 
+            }
+
+            else if (like >= 40 && 50){
+                var love = document.getElementById("meet").innerHTML = " The love between " + " " + run + " and " + " " + ran + " is " + like + " % " + " give yourself attention to make your relationship stand."
+
+            }
+
+            if (like >= 60 && 70){
+                var love = document.getElementById("meet").innerHTML = " The love between " + " " + run + " and " + " " + ran + " is " + like + " % " + " your relationship is good you can marry each other. "
+
+            }
+
+            if (like >= 80 && 90){
+                var love = document.getElementById("meet").innerHTML = " The love between " + " " + run + " and " + " " + ran + " is " + like + " % " + " this is a perfect love kindly pick a wedding date. "
+
+            }
+            
+            
+
+        }
+
+    </script>
+    
+</body>
+</html>
